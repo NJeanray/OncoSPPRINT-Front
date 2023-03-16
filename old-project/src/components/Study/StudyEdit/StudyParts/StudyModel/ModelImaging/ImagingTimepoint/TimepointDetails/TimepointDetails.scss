@@ -1,0 +1,11 @@
+.timepoints-details__select-list-item {
+  outline: none;
+
+  &:hover {
+    background-color: lightgray;
+  }
+
+  .menu-item {
+    background: none !important;
+  }
+}

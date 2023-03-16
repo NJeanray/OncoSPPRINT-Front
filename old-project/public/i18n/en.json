@@ -1,0 +1,11 @@
+{
+    "home": {
+        "home_message": "Edit src/App.en.js and save to reload.",
+        "learn_react": "Learn React"
+    },
+    "Login": {
+        "submitLogin": "Login",
+        "username": "Username",
+        "password": "Password"
+    }
+}

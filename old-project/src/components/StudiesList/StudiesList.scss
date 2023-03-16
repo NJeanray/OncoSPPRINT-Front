@@ -1,0 +1,14 @@
+.snack-bar {
+  div {
+    background-color: forestgreen !important;
+  }
+
+  .snack-bar__content {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 20px;
+    }
+  }
+}

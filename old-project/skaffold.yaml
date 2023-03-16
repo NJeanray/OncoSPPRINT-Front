@@ -1,0 +1,19 @@
+apiVersion: skaffold/v1beta7
+kind: Config
+build:
+  artifacts:
+  - image: registry.oncodesign.com/oncospprint/oncospprint-front
+    docker:
+      dockerfile: Dockerfile
+  tagPolicy:
+    sha256: {}
+deploy:
+  helm:
+    releases:
+    - name: oncospprint-front
+      chartPath: ./kubernetes/oncospprint-front-helm
+      valuesFiles:
+        - helm-values-file.yaml
+      recreatePods: true
+      values:
+        image: registry.oncodesign.com/oncospprint/oncospprint-front

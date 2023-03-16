@@ -1,0 +1,29 @@
+.dialog-title {
+  h6 {
+    font-size: 1em !important;
+  }
+}
+
+.dialog-actions__btn {
+  flex-grow: 1;
+}
+
+.dialog-action__wrapper {
+  margin: 0 20px 20px !important;
+
+  .dialog-actions__btn--cancel {
+    &:hover {
+      color: white !important;
+      border-color: rgba(1, 96, 144, 0.8) !important;
+      background-color: rgba(1, 96, 144, 0.8) !important;
+    }
+
+    border: 1px solid #025590 !important;
+    color: #025590 !important;
+  }
+
+  .dialog-actions__btn--confirm {
+    background-color: #025590 !important;
+    color: white !important;
+  }
+}

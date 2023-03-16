@@ -1,0 +1,16 @@
+.login-wrapper {
+  height: calc(100vh - #{$headerHeight});
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #025590, #3397de);
+
+  .login {
+    background: white;
+    max-width: 400px;
+    margin: auto;
+    text-align: right;
+    padding: 50px;
+    border-radius: 10px;
+  }
+}

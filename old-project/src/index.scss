@@ -1,0 +1,105 @@
+@import 'components/vars.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+  background-color: rgba(2, 85, 144, 0.05);
+}
+
+h2 {
+  font-weight: 500;
+  color: $blue;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+.autocomplete {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .autocomplete__paper {
+    min-width: 300px;
+    width: fit-content;
+    position: absolute;
+    z-index: 100;
+  }
+}
+
+.btn-submit-cancel {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+
+  button + button {
+    margin-left: 10px;
+  }
+}
+
+.modal__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: white;
+  outline: none;
+  max-height: 70%;
+  overflow-y: scroll;
+  border-radius: 5px;
+
+  .modal__header {
+    height: 50px;
+    background-color: #025590;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h6 {
+      color: white;
+    }
+  }
+
+  .modal__content {
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 30px;
+  }
+}
+
+.MuiPopover-paper-245 {
+  ul {
+    max-height: 500px !important;
+  }
+}
+.MuiExpansionPanel-disabled-162 {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+@import 'components/vars.scss';
+
+@import 'components/App/App.scss';
+@import 'components/AddButton/AddButton.scss';
+@import 'components/StudiesList/StudiesList.scss';
+@import 'components/CreateStudy/CreateStudy.scss';
+@import 'components/Study/StudyDocuments/StudyDocuments.scss';
+@import 'components/GroupsSettings/GroupsSettings.scss';
+@import 'components/Study/StudyEdit/StudyEdit.scss';
+@import 'components/Study/StudyEdit/StudyParts/StudyModel/StudyModel.scss';
+@import 'components/ConfirmPopup/ConfirmPopup';
+@import 'components/Header/Header.scss';
+@import 'components/Login/Login.scss';
+@import 'components/Spinner/Spinner.scss';
+@import 'components/Study/StudyEdit/StudyParts/StudyModel/StudyCustomSubcontracting/TabContent/TabContent.scss';
+@import 'components/Study/StudyEdit/StudyParts/StudyModel/StudyCustomSubcontracting/TabContent/CreateContentItem/CreateContentItem.scss';
+@import 'components/Study/StudyEdit/StudyGlobalSettings/StudyGlobalSettings.scss';
+@import 'components/Brick/BrickSelector.scss';
+@import 'components/Study/StudyEdit/StudyParts/StudyModel/ModelImaging/ModelImaging.scss';
+@import 'components/Study/StudyEdit/StudyParts/StudyModel/ModelImaging/ImagingTimepoint/TimepointDetails/TimepointDetails.scss';

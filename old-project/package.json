@@ -1,0 +1,49 @@
+{
+  "name": "oncospprint-front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "@material-ui/styles": "^4.0.0-beta.2",
+    "@sentry/browser": "^4.6.2",
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "downshift": "^3.2.7",
+    "immer": "^2.0.0",
+    "lodash": "^4.17.11",
+    "material-ui-superselectfield": "^1.10.0",
+    "moment": "^2.24.0",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-intl": "^2.8.0",
+    "react-intl-redux": "^2.1.0",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.5",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.4",
+    "redux-form": "^8.1.0",
+    "redux-saga": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "prettier": "^1.17.0"
+  }
+}

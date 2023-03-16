@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: oncospprint-front-service
+  labels:
+    app: oncospprint-front
+spec:
+  clusterIP: None
+  ports:
+    - port: 80
+      name: oncospprint-front
+  selector:
+    app: oncospprint-front
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: oncospprint-front
+  labels:
+    app: oncospprint-front
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: oncospprint-front
+  template:
+    metadata:
+      labels:
+        app: oncospprint-front
+    spec:
+      imagePullSecrets:
+      - name: gitlab-registry-front
+      containers:
+      - name: oncospprint-front
+        image: "registry.oncodesign.com/oncospprint/oncospprint-front:latest"
+        imagePullPolicy: Always
+        command: ["nginx"]
+        args: ["-g", "daemon off;"]
+        ports:
+        - containerPort: 80

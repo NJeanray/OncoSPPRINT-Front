@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  front:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: registry.oncodesign.com/oncospprint/oncospprint-front:develop
+    networks:
+      - oncospprint_user_some-net
+networks:
+  oncospprint_user_some-net:
+    external: true

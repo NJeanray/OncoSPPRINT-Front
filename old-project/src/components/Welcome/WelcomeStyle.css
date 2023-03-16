@@ -1,0 +1,4 @@
+.welcome {
+  display: flex;
+  justify-content: space-between;
+}

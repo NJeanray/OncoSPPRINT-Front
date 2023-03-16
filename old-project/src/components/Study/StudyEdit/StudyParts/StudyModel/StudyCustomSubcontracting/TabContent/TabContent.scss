@@ -1,0 +1,48 @@
+.tab-content {
+  .expansion-panel-details__delete-icon {
+    display: block;
+    width: 100%;
+  }
+
+  .tab-content__expansion-panel-summary {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: unset !important;
+
+    .tab-content__expansion-panel-summary-left {
+      display: flex;
+    }
+
+    svg {
+      margin-right: 10px;
+      color: lightslategrey;
+    }
+  }
+
+  .modal__wrapper {
+    width: 600px !important;
+  }
+
+  .cost__wrapper-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cost {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  .tab-content__add-btn {
+    float: right;
+    margin-top: 10px;
+  }
+}

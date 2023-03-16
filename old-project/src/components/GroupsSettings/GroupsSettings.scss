@@ -1,0 +1,21 @@
+.list-item {
+  &:hover {
+    .list-item__icon {
+      visibility: visible;
+    }
+  }
+
+  .list-item__icon {
+    visibility: hidden;
+    font-size: 14px !important;
+    background-color: rgb(52, 119, 166);
+    padding: 7px;
+    border-radius: 100px;
+    color: white;
+    margin-right: 10px;
+
+    &:hover {
+      background-color: #025590;
+    }
+  }
+}

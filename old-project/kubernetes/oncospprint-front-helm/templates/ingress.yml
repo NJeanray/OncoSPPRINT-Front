@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: oncospprint-front
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  tls:
+    - secretName: traefik-cert
+  rules:
+  - host: {{ .Values.front_host }}
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: oncospprint-front-service
+          servicePort: 80

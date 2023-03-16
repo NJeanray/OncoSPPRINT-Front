@@ -1,0 +1,66 @@
+.study-edit__wrapper {
+  display: flex;
+
+  .study-edit__card-left {
+    width: inherit;
+
+    .card-left__ammend-btn-wrapper {
+      display: flex;
+      justify-content: flex-end;
+
+      .card-left__ammend-btn {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  .study-edit__card-right {
+    min-width: 200px;
+    min-height: 100px;
+    height: fit-content;
+    margin-left: 30px;
+
+    .card-right__btn {
+      margin: 15px 20px;
+    }
+
+    .card-right__title {
+      margin: 10px 30px;
+    }
+
+    .card-right__total-cost-wrapper {
+      background-color: #025590;
+      height: fit-content;
+      color: white;
+      padding: 20px 0;
+
+      span {
+        margin: 10px 30px;
+      }
+
+      .card-right__total-cost {
+        font-size: 0.58em;
+        display: flex;
+      }
+
+      .card-right__total-cost-value {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .study-edit__amend-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .study-edit__amend-btn {
+      margin: 0 24px 24px 24px !important;
+    }
+  }
+}
+
+.locker {
+  margin-right: 10px !important;
+  font-size: 1.2em !important;
+}
